@@ -28,4 +28,4 @@ hashComments:3,cStyleComments:!0,multilineStrings:!0,tripleQuotedStrings:!0,rege
 PR_NOCODE:"nocode",PR_PLAIN:"pln",PR_PUNCTUATION:"pun",PR_SOURCE:"src",PR_STRING:"str",PR_TAG:"tag",PR_TYPE:"typ"}})();
 //custom extension. Assumes all pre/code/ pairings are to be pretty-printed and adds "prettyprint" class auto
 //autoexecutes the prettyprinting
-;(function(b){for(var b=b.getElementsByTagName("code"),c=0,d=b.length,a;c!==d;c++)a=b[c],"PRE"===a.parentNode.nodeName.toUpperCase()&&(a.classList?a.classList.add("prettyprint"):a.className+=" prettyprint");prettyPrint()})(document);
+;(function(b){for(var b=b.getElementsByTagName("code"),c=0,d=b.length,a;c!==d;c++)a=b[c],"PRE"===a.parentNode.nodeName.toUpperCase()&&(a.parentNode.classList?a.parentNode.classList.add("prettyprint"):a.parentNode.className+=" prettyprint");prettyPrint()})(document);
